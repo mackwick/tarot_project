@@ -1,6 +1,6 @@
 # Unnamed Tarot Project
 
-### Description: An API containing all 78 tarot cards, with keywords for upright and reversed positions. As the dev, I will have CRUD capabilities. Users will be able to search and show cards from the API. (I may add functionality for other devs to use the API.)
+### Description: An API containing all 78 tarot cards, with keywords for upright and reversed positions. As the dev, I will have CRUD capabilities. Users will be able to look up or pull random cards from the API. (I may add functionality for other devs to use the API and/or for users to create accounts.)
 
 **Will be Deployed on Render**
 
