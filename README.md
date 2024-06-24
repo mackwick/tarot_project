@@ -1,8 +1,10 @@
 # Unnamed Tarot Project
 
-### Description: An API containing all 78 tarot cards, with keywords for upright and reversed positions. As the dev, I will have CRUD capabilities. Users will be able to look up or pull random cards from the API. (I may add functionality for other devs to use the API and/or for users to create accounts.)
+## Description
 
-**Will be Deployed on Render**
+An API containing all 78 tarot cards, with keywords for upright and reversed positions. As the dev, I will have CRUD capabilities. Users will be able to look up or pull random cards from the API. (I may add functionality for other devs to use the API and/or for users to create accounts.)
+
+(Will be Deployed on Render)
 
 ### Trello Board: [Tarot Project | Trello](https://trello.com/b/ixUv6oL7/tarot-project)
 
@@ -20,7 +22,8 @@
 name: { type: String, required: true },
 number: {type: Number, rquired: true},
 upright: { type: Boolean, required: true },
-keywords: {type: String, required: true}
+uprightKeywords: {type: String, required: true},
+reverseKeywords: {type: String, required: true}
 }
 
 ## Route Map
