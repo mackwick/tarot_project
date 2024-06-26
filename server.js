@@ -3,7 +3,6 @@ const express = require("express");
 require("dotenv").config();
 const morgan = require("morgan");
 const cors = require("cors");
-const methodOverride = require("method-override");
 const CardRouter = require("./controllers/cardRoutes");
 
 const app = express();
