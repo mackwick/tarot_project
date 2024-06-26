@@ -38,5 +38,14 @@ router.delete("/:id", async (req, res) => {
 });
 
 //UPDATE
+router.put("/:id", async (req, res) => {
+  try {
+    const updatedCard = await Card.findByIdAndUpdate(req.params.id, req.body);
+    res.json(updatedCard);
+  } catch (err) {
+    console.log(err.message);
+    res.status(400).json(err);
+  }
+});
 
 module.exports = router;
