@@ -20,7 +20,7 @@ An API containing all 78 tarot cards, with keywords for upright and reversed pos
 
 {
 name: { type: String, required: true },
-number: {type: Number, rquired: true},
+number: {type: Number, required: true},
 upright: { type: Boolean, required: true },
 uprightKeywords: {type: String, required: true},
 reverseKeywords: {type: String, required: true},
