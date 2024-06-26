@@ -2,17 +2,16 @@
 const mongoose = require("./connection");
 
 //MODEL
-const { model, Schema } = mongoose;
 
-const CardSchema = new Schema({
+const CardSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  number: { type: Number, rquired: true },
+  number: { type: Number, required: true },
   upright: { type: Boolean, required: true },
   uprightKeywords: { type: String, required: true },
   reverseKeywords: { type: String, required: true },
   image: { type: String, required: true },
 });
 
-const Card = model("Card", CardSchema);
+const Card = mongoose.model("Card", CardSchema);
 
 module.exports = Card;

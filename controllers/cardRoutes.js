@@ -7,14 +7,24 @@ const router = express.Router();
 //INDEX
 router.get("/", async (req, res) => {
   try {
-    const Card = await Card.find({});
-    res.json(Card);
+    const card = await Card.find({});
+    res.json(card);
   } catch (err) {
+    console.log(err.message);
     res.status(400).json(err);
   }
 });
 
 //CREATE
+router.post("/", async (req, res) => {
+  try {
+    const newCard = await Card.create(req.body);
+    res.json(newCard);
+  } catch (err) {
+    console.log(err.message);
+    res.status(400).json(err);
+  }
+});
 
 //DESTROY
 
